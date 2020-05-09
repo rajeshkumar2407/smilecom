@@ -45,27 +45,11 @@
  
 * **Error Response:**
 
-  * **Code:** 400 <br />
+  * **Code:** 200 <br />
     **Content:** 
       ```
       {
-      "SRAError": {
-        "errorDesc": "identity is missing",
-        "errorType": "business",
-        "errorCode": "SRA-0003"
-       }
-      }
-      ```
-      
-  * **Code:** 404 <br />
-    **Content:** 
-      ```
-      {
-        "SRAError": {
-          "errorDesc": "invalid identity",
-          "errorType": "business",
-          "errorCode": "SRA-0003"
-         }
+      "done" : true
       }
       ```
    
