@@ -91,3 +91,81 @@
 ## Login
 
 User must need to have valid token to access Smile portal APIs. provide a vaid username or smile number with your password to receive a token. 
+
+* **URL**
+
+  /sra/tokens
+
+* **Method:**
+
+  `GET`
+    
+*  **URL Params**
+
+   None
+
+* **Query Params**
+
+  `username={username}&password={password}&srav={version}
+  
+* **Request Body:**
+
+   None
+   
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** 
+      ```
+      {
+      "token": {
+        "username": "admin",
+        "tokenUUID": "ab394518-6c24-4330-bb38-65c9ae1845c4",
+        "originatingIP": "0:0:0:0:0:0:0:1",
+        "version": 1.0,
+        "expires": 1576667359617,
+        "groups": [
+        "Customer"
+        ],
+        "customerId": 101
+      }
+      }
+      ```
+ 
+* **Error Response:**
+
+  * **Code:** 400 <br />
+    **Content:** 
+      ```
+      {
+      "SRAError":{
+      "errorDesc":"identity is missing",
+      "errorType":"business",
+      "errorCode":"SRA-0003"
+      }
+      }
+      ```
+      
+  * **Code:** 404 <br />
+    **Content:** 
+      ```
+      {
+      "SRAError":{
+      "errorDesc":"invalid identity",
+      "errorType":"business",
+      "errorCode":"SRA-0003"
+      }
+      }
+      ```
+      
+  * **Code:** 404 <br />
+    **Content:** 
+      ```
+      {
+      "SRAError":{
+      "errorDesc":"user already regisstered",
+      "errorType":"business",
+      "errorCode":"SRA-0003"
+      }
+      }
+      ```
