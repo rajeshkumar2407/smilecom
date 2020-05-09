@@ -36,7 +36,10 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ done : true}`
+    **Content:** 
+      ```
+      { done : true}
+      ```
  
 * **Error Response:**
   * **HTTP 400:**
