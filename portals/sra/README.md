@@ -106,7 +106,7 @@ User must need to have valid token to access Smile portal APIs. provide a vaid u
 
 * **Query Params**
 
-  `username={username}&password={password}&srav={version}
+  `username={username}&password={password}&srav={version}`
   
 * **Request Body:**
 
@@ -134,36 +134,12 @@ User must need to have valid token to access Smile portal APIs. provide a vaid u
  
 * **Error Response:**
 
-  * **Code:** 400 <br />
+  * **Code:** 401 <br />
     **Content:** 
       ```
       {
       "SRAError":{
-      "errorDesc":"identity is missing",
-      "errorType":"business",
-      "errorCode":"SRA-0003"
-      }
-      }
-      ```
-      
-  * **Code:** 404 <br />
-    **Content:** 
-      ```
-      {
-      "SRAError":{
-      "errorDesc":"invalid identity",
-      "errorType":"business",
-      "errorCode":"SRA-0003"
-      }
-      }
-      ```
-      
-  * **Code:** 404 <br />
-    **Content:** 
-      ```
-      {
-      "SRAError":{
-      "errorDesc":"user already regisstered",
+      "errorDesc":"Invalid username or password",
       "errorType":"business",
       "errorCode":"SRA-0003"
       }
