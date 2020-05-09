@@ -107,6 +107,11 @@ User must need to have valid token to access Smile portal APIs. provide a vaid u
 * **Query Params**
 
   `username={username}&password={password}&srav={version}`
+  | Tables        | Are           | Cool  |
+  | ------------- |:-------------:| -----:|
+  | col 3 is      | right-aligned | $1600 |
+  | col 2 is      | centered      |   $12 |
+  | zebra stripes | are neat      |    $1 |
   
 * **Request Body:**
 
