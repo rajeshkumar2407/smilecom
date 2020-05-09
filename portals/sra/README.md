@@ -20,13 +20,7 @@ once user's username or smile voice number is verified he will receive the OTP o
 ### Response(invalid identity)
 
     HTTP/1.1 404
-    {
-    "SRAError": {
-        "errorDesc": "invalid identity",
-        "errorType": "business",
-        "errorCode": "SRA-0003"
-        }
-    }
+    {"SRAError": {"errorDesc": "invalid identity","errorType": "business","errorCode": "SRA-0003"}}
     
 ## Create Token or Login
 
