@@ -39,36 +39,46 @@
     **Content:** `{ done : true}`
  
 * **Error Response:**
-  * **Content:**
+  * **HTTP 400:**
 
     ```
     {
-      "customerId":12345,
-      "identity":"09876485982", //mobile number used for OTP
-      "key":"594432", // OTP Code. Valid for 15 Min
-      "newPassword":"test123",
-      "confirmPassword":"test123"
+    "SRAError": {
+        "errorDesc": "identity is missing",
+        "errorType": "business",
+        "errorCode": "SRA-0003"
+       }
     }
     ```
 
   OR
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+   * **HTTP 404:**
 
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
+    ```
+    {
+    "SRAError": {
+        "errorDesc": "invalid identity",
+        "errorType": "business",
+        "errorCode": "SRA-0003"
+       }
+    }
+    ```
     
+   OR
+
+   * **HTTP 404:**
+
+    ```
+    {
+    "SRAError": {
+        "errorDesc": "user already regisstered",
+        "errorType": "business",
+        "errorCode": "SRA-0003"
+       }
+    }
+    ```
+   
 ## Create Token or Login
 
 User must need to have valid token to access Smile portal APIs. provide a vaid username or smile number with your password to receive a token. 
