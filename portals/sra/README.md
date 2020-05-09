@@ -23,7 +23,8 @@
   
 * **Request Body:**
 
-  ```{
+  ```
+  {
     "customerId":12345,
     "identity":"09876485982", //mobile number used for OTP
     "key":"594432", // OTP Code. Valid for 15 Min
@@ -35,12 +36,21 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
+    **Content:** `{ done : true}`
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    **Content:** 
+    ```
+    {
+    "SRAError": {
+        "errorDesc": "invalid identity",
+        "errorType": "business",
+        "errorCode": "SRA-0003"
+    }
+    }
+    ```
 
   OR
 
