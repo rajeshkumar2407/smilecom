@@ -45,11 +45,15 @@
  
 * **Error Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 400 <br />
     **Content:** 
       ```
       {
-      "done" : true
+        "SRAError": {
+          "errorDesc": "identity is missing",
+          "errorType": "business",
+          "errorCode": "SRA-0003"
+        }
       }
       ```
    
