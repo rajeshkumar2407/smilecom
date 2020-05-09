@@ -1,12 +1,22 @@
 # Smile REST API
 
-<!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
-
 - [Smile REST API](#smile-rest-api)
     - [Registration](#registration)
     - [Login](#login)
-
-<!-- /TOC -->
+    - [Get Customer Details](#get-customer-details)
+    - [Get Customer Without Token](#get-customer-without-token)
+    - [Change Password](#change-password)
+    - [Forget Password](#forget-password)
+    - [Get Accounts](#get-accounts)
+    - [Get Account for smile number](#get-account-for-smile-number)
+    - [Get Bundles](#get-bundles)
+    - [Redeem Voucher](#redeem-voucher)
+    - [Sale Airtime Using Payment Gateway](#sale-airtime-using-payment-gateway)
+    - [Sale Bundle Using Payment Gateway](#sale-bundle-using-payment-gateway)
+    - [Get Sale Status](#get-sale-status)
+    - [Sale Bundle Using Airtime](#sale-bundle-using-airtime)
+    - [Share Airtime](#share-airtime)
+    - [Share Data](#share-data)
 
 
 ## Registration
