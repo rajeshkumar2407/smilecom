@@ -44,45 +44,30 @@
       ```
  
 * **Error Response:**
-  * **HTTP 400:**
 
-    ```
-    {
-    "SRAError": {
+  * **Code:** 400 <br />
+    **Content:** 
+      ```
+      {
+      "SRAError": {
         "errorDesc": "identity is missing",
         "errorType": "business",
         "errorCode": "SRA-0003"
        }
-    }
-    ```
-
+      }
+      ```
   OR
-
-  * **HTTP 404:**
-
-    ```
-    {
-    "SRAError": {
-        "errorDesc": "invalid identity",
-        "errorType": "business",
-        "errorCode": "SRA-0003"
-       }
-    }
-    ```
-    
-  OR
-
-   * **HTTP 404:**
-
-    ```
-    {
-    "SRAError": {
-        "errorDesc": "user already regisstered",
-        "errorType": "business",
-        "errorCode": "SRA-0003"
-       }
-    }
-    ```
+  * **Code:** 404 <br />
+    **Content:** 
+      ```
+      {
+        "SRAError": {
+          "errorDesc": "invalid identity",
+          "errorType": "business",
+          "errorCode": "SRA-0003"
+         }
+      }
+      ```
    
 ## Create Token or Login
 
