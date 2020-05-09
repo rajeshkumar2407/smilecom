@@ -3,9 +3,6 @@
 * [Create Token or Login](#createtoken)
 
 ## Register User
-
-**Show User**
-----
   Returns json data about a single user.
 
 * **URL**
