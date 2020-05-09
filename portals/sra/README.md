@@ -1,6 +1,7 @@
 # Smile Restful APIs
-* [Register User](#registeruser)
-* [Create Token](#createtoken)
+- [Smile Restful APIs](#crossref-rest-api)
+    - [Register User](#registeruser)
+    - [Create Token](#createtoken)
 
 ## Register User
   Register a new user to the application using OTP.
