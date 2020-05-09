@@ -39,17 +39,15 @@
     **Content:** `{ done : true}`
  
 * **Error Response:**
+  * **Content:**
 
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** 
-    
     ```
     {
-    "SRAError": {
-        "errorDesc": "invalid identity",
-        "errorType": "business",
-        "errorCode": "SRA-0003"
-    }
+      "customerId":12345,
+      "identity":"09876485982", //mobile number used for OTP
+      "key":"594432", // OTP Code. Valid for 15 Min
+      "newPassword":"test123",
+      "confirmPassword":"test123"
     }
     ```
 
