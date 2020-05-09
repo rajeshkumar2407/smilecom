@@ -13,11 +13,21 @@ once user's username or smile voice number is verified he will receive the OTP o
 
     curl -i -H 'Accept: application/json' -d '{"customerId":10020,"identity":"0688944","key":"499504","newPassword":"test@123","confirmPassword":"test@123"}' https://smile.com.ng/sra/registerbyotp
     
-### Response
+### Response(success)
 
     HTTP/1.1 200 OK
     {"done":true}
+### Response(invalid identity)
 
+    HTTP/1.1 404
+    {
+    "SRAError": {
+        "errorDesc": "invalid identity",
+        "errorType": "business",
+        "errorCode": "SRA-0003"
+        }
+    }
+    
 ## Create Token or Login
 
 User must need to have valid token to access Smile portal APIs. provide a vaid username or smile number with your password to receive a token. 
