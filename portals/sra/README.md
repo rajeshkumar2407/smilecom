@@ -38,7 +38,9 @@
   * **Code:** 200 <br />
     **Content:** 
       ```
-      { done : true}
+      {
+      "done" : true
+      }
       ```
  
 * **Error Response:**
