@@ -3,25 +3,34 @@
 * [Create Token or Login](#createtoken)
 
 ## Register User
-  Returns json data about a single user.
+  Register a new user to the application using OTP.
 
 * **URL**
 
-  /users/:id
+  /sra/registerbyotp
 
 * **Method:**
 
-  `GET`
+  `POST`
     
 *  **URL Params**
 
-   **Required:**
- 
-   `id=[integer]`
+   None
 
-* **Data Params**
+* **Query Params**
 
   None
+  
+* **Request Body:**
+
+  ```{
+    "customerId":12345,
+    "identity":"09876485982", //mobile number used for OTP
+    "key":"594432", // OTP Code. Valid for 15 Min
+    "newPassword":"test123",
+    "confirmPassword":"test123"
+  }
+  ```
 
 * **Success Response:**
 
