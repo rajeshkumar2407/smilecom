@@ -4,23 +4,17 @@
 
 ## Register User
 
-An user can register to smile protal using his username or smile voice number. user must be onboarded before the registration.
-once user's username or smile voice number is verified he will receive the OTP on his registered mobile number to set password.
+**Show User**
+----
+  Returns json data about a single user.
 
-### Request
+* **URL**
 
-`POST /sra/registerbyotp`
+  /users/:id
 
-    curl -i -H 'Accept: application/json' -d '{"customerId":10020,"identity":"0688944","key":"499504","newPassword":"test@123","confirmPassword":"test@123"}' https://smile.com.ng/sra/registerbyotp
-    
-### Response(success)
+* **Method:**
 
-    HTTP/1.1 200 OK
-    {"done":true}
-### Response(invalid identity)
-
-    HTTP/1.1 404
-    {"SRAError": {"errorDesc": "invalid identity","errorType": "business","errorCode": "SRA-0003"}}
+  `GET`
     
 *  **URL Params**
 
