@@ -49,11 +49,7 @@
     **Content:** 
       ```
       {
-      "SRAError": {
-      "errorDesc": "identity is missing",
-      "errorType": "business",
-      "errorCode": "SRA-0003"
-      }
+      "done" : true
       }
       ```
    
