@@ -57,12 +57,24 @@
       }
       ```
       
-  * **Code:** 400 <br />
+  * **Code:** 404 <br />
     **Content:** 
       ```
       {
       "SRAError":{
-      "errorDesc":"identity is missing",
+      "errorDesc":"invalid identity",
+      "errorType":"business",
+      "errorCode":"SRA-0003"
+      }
+      }
+      ```
+      
+  * **Code:** 404 <br />
+    **Content:** 
+      ```
+      {
+      "SRAError":{
+      "errorDesc":"user already regisstered",
       "errorType":"business",
       "errorCode":"SRA-0003"
       }
