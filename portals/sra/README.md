@@ -1,6 +1,6 @@
 # Smile Restful APIs
 * [Register User](#registeruser)
-* [Create Token or Login](#createtoken)
+* [Create Token](#createtoken)
 
 ## Register User
   Register a new user to the application using OTP.
@@ -81,6 +81,6 @@
       }
       ```
    
-## Create Token or Login
+## Create Token
 
 User must need to have valid token to access Smile portal APIs. provide a vaid username or smile number with your password to receive a token. 
