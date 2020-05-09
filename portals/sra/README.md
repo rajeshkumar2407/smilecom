@@ -22,6 +22,44 @@ once user's username or smile voice number is verified he will receive the OTP o
     HTTP/1.1 404
     {"SRAError": {"errorDesc": "invalid identity","errorType": "business","errorCode": "SRA-0003"}}
     
+*  **URL Params**
+
+   **Required:**
+ 
+   `id=[integer]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ id : 12, name : "Michael Bloom" }`
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "User doesn't exist" }`
+
+  OR
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{ error : "You are unauthorized to make this request." }`
+
+* **Sample Call:**
+
+  ```javascript
+    $.ajax({
+      url: "/users/1",
+      dataType: "json",
+      type : "GET",
+      success : function(r) {
+        console.log(r);
+      }
+    });
+  ```
+    
 ## Create Token or Login
 
 User must need to have valid token to access Smile portal APIs. provide a vaid username or smile number with your password to receive a token. 
