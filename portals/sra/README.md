@@ -50,7 +50,9 @@
       ```
       {
       "SRAError" : {
-      "errorDesc" : "identity is missing"
+      "errorDesc" : "identity is missing",
+      "errorType" : "business",
+      "errorCode" : "SRA-0003"
       }
       }
       ```
