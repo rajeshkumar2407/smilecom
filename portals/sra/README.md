@@ -50,6 +50,7 @@
       ```
       {
       "SRAError" : {
+      "errorDesc" : "identity is missing"
       }
       }
       ```
