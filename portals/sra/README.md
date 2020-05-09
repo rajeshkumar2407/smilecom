@@ -9,9 +9,9 @@ once user's username or smile voice number is verified he will receive the OTP o
 
 ### Request
 
-`POST /thing/`
+`POST /sra/registerbyotp`
 
-    curl -i -H 'Accept: application/json' -d 'name=Foo&status=new' http://localhost:7000/thing
+    curl -i -H 'Accept: application/json' -d '{"customerId":10020,"identity":"0688944","key":"499504","newPassword":"test@123","confirmPassword":"test@123"}' https://smile.com.ng/sra/registerbyotp
 
 ## Create Token or Login
 
